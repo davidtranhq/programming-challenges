@@ -1,0 +1,8 @@
+class Solution {
+public:
+    int hammingWeight(uint32_t n) {
+        int ans = 0;
+        for (; n > 0; n &= n - 1) ans += 1;
+        return ans;
+    }
+};
